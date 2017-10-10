@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rina.tip.TIPHome"
+    android:background= "@drawable/newbg"
+    >
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="141dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="311dp"
+        android:text="About"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/news"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:onClick="sendActivity"
+        />
+
+    <Button
+        android:id="@+id/news"
+        android:layout_width="141dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="311dp"
+        android:text="News"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:onClick="sendActivityNews"
+        />
+
+    <Button
+        android:id="@+id/contactus"
+        android:layout_width="141dp"
+        android:layout_height="60dp"
+        android:text="Contact Us"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/schcal"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/about"
+        app:layout_constraintVertical_bias="0.437"
+        app:layout_constraintHorizontal_bias="0.396"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:onClick="sendActivityContact"
+        />
+
+    <Button
+        android:id="@+id/schcal"
+        android:layout_width="141dp"
+        android:layout_height="60dp"
+        android:text="School Calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/news"
+        app:layout_constraintVertical_bias="0.437"
+        android:layout_marginRight="28dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:onClick="sendActivitySchCal"
+        />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tip"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.127" />
+</android.support.constraint.ConstraintLayout>
